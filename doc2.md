@@ -13,8 +13,8 @@ YeşilPort, dijital bina pasaportu platformu olarak birçok farklı paydaşla et
 ```mermaid
 graph TD
     A[YeşilPort Kullanıcıları] --> B[Bina Sahipleri<br/>ve Yöneticileri]
-    A --> C[Gayrimenkul<br/>Yatırımcıları]
-    A --> D[Yerel Yönetimler<br/>ve Belediyeler]
+    A --> C[Gayrimenkul<br/>Firmaları ve Şirketleri]
+    A --> D[Şehir Planlama<br/>Belediyeler ve Bakanlık]
     A --> E[Sigorta<br/>Şirketleri]
     A --> F[Topluluk<br/>Temsilcileri]
     
@@ -23,12 +23,12 @@ graph TD
     B --> B3[Bina Sahipleri]
     
     C --> C1[Gayrimenkul<br/>Yatırım Fonları]
-    C --> C2[Bireysel<br/>Yatırımcılar]
-    C --> C3[Emlak<br/>Şirketleri]
+    C --> C2[Emlak<br/>Geliştirme Şirketleri]
+    C --> C3[Yatırım<br/>Holding Şirketleri]
     
-    D --> D1[Belediye<br/>Çalışanları]
-    D --> D2[Şehir<br/>Planlamacıları]
-    D --> D3[Çevre<br/>Müdürlükleri]
+    D --> D1[Belediyeler<br/>Kurumsal Yapı]
+    D --> D2[Şehir Planlama<br/>Uzmanları]
+    D --> D3[Çevre-Şehircilik<br/>Bakanlığı]
     
     style A fill:#e1f5e1
     style B fill:#e3f2fd
@@ -39,8 +39,8 @@ graph TD
 Bu dokümanda, en kritik üç profili derinlemesine inceleyeceğiz:
 
 1. **Apartman/Site Yöneticileri** - Platformun birincil kullanıcıları
-2. **Gayrimenkul Yatırımcıları** - Karar vericiler ve finansal güç
-3. **Belediye Çalışanları ve Şehir Planlamacıları** - Sistemik etki yaratabilecek kullanıcılar
+2. **Gayrimenkul Firmaları ve Yatırım Şirketleri** - Karar vericiler ve finansal güç
+3. **Şehir Planlama Uzmanları, Belediyeler ve Çevre-Şehircilik Bakanlığı** - Sistemik etki yaratabilecek kurumsal yapılar
 
 ---
 
@@ -150,83 +150,94 @@ graph LR
 
 ---
 
-### 2.2 Profil 2: Gayrimenkul Yatırımcıları
+### 2.2 Profil 2: Gayrimenkul Firmaları ve Yatırım Şirketleri
 
 #### Kimler?
 
-Gayrimenkul yatırımcıları, binaları satın alan, satan veya yatırım amaçlı değerlendiren kişiler. Bunlar hem bireysel yatırımcılar hem de kurumsal yatırım fonları olabilir. YeşilPort için kritik çünkü onlar karar vericiler ve finansal güce sahipler.
+Gayrimenkul firmaları, yatırım şirketleri ve emlak geliştirme şirketleri, binaları satın alan, satan, geliştiren veya yatırım amaçlı değerlendiren kurumsal yapılar. Bunlar hem küçük ölçekli emlak şirketleri hem de büyük yatırım fonları ve holding şirketleri olabilir. YeşilPort için kritik çünkü onlar karar vericiler ve finansal güce sahipler. Bu firmalar, portföylerindeki binaları yönetirken ve yeni yatırımlar yaparken veri tabanlı kararlar almak zorundalar.
 
 #### Nasıl Canlanıyorlar?
 
-**Yaş ve Profesyonel Özellikler:**
-- İki ana grup var: Genç profesyoneller (28-40 yaş) ve deneyimli yatırımcılar (45-65 yaş)
-- Genç grup: Teknolojiye aşina, sürdürülebilirlik konularına ilgili, ESG (Environmental, Social, Governance) kriterlerini biliyorlar
-- Deneyimli grup: Geleneksel yatırım mantığı, "para kazanmak" odaklı, ama yeni trendleri takip ediyorlar
-- Çoğunlukla üniversite mezunu, finans veya işletme geçmişi var
+**Kurumsal Yapı ve Ölçek:**
+- Küçük ölçekli emlak şirketleri (5-20 çalışan) ve büyük holding şirketleri (100+ çalışan) arasında geniş bir yelpaze
+- Portföy yönetimi ekipleri, yatırım analistleri, emlak geliştirme uzmanları gibi profesyonellerden oluşuyorlar
+- Çoğunlukla finans, işletme, mühendislik veya mimarlık geçmişine sahip profesyoneller çalışıyor
+- Kurumsal karar alma süreçleri var - bireysel değil, ekip bazlı kararlar alınıyor
+- ESG (Environmental, Social, Governance) kriterleri giderek önemli hale geliyor, özellikle büyük şirketler için
 
-**Kültürel ve Sosyal Özellikler:**
-- Şehirli, modern yaşam tarzına sahipler
-- Global trendleri takip ediyorlar (özellikle genç grup)
-- Networking önemli - LinkedIn aktif kullanıcıları
+**Kurumsal Kültür ve Değerler:**
+- Şehirli, modern iş kültürüne sahipler
+- Global trendleri takip ediyorlar - uluslararası standartlara uyum önemli
+- Profesyonel networking önemli - sektör etkinlikleri, konferanslar
 - "Akıllı yatırım" yapmak istiyorlar - sadece kısa vadeli kâr değil, uzun vadeli değer de önemli
-- Çevre bilinci artıyor, özellikle genç yatırımcılar için ESG kriterleri önemli
+- Kurumsal sosyal sorumluluk (CSR) programları var, çevre bilinci artıyor
+- Rekabetçi piyasada fark yaratmak için veri tabanlı kararlar almak zorundalar
 
-**Teknoloji ve Medya Alışkanlıkları:**
-- Teknoloji kullanıcıları - mobil uygulamalar, web platformları rahat kullanıyorlar
-- LinkedIn, Twitter, finans haber siteleri takip ediyorlar
-- Veri analizi araçlarına aşinalar (Excel, grafikler, raporlar)
-- Blockchain ve kripto konularına ilgili (özellikle genç grup)
-- Hızlı karar vermek için hızlı bilgi erişimi istiyorlar
+**Teknoloji ve Sistem Alışkanlıkları:**
+- Kurumsal yazılımlar kullanıyorlar - CRM sistemleri, portföy yönetim araçları
+- Veri analizi araçlarına aşinalar (Excel, Power BI, Tableau gibi)
+- Web tabanlı platformlar tercih ediyorlar - masaüstü ve mobil erişim önemli
+- Blockchain ve yeni teknolojilere ilgili ama şüpheci yaklaşıyorlar ("gerçekten güvenilir mi?")
+- API entegrasyonları önemli - mevcut sistemlerle uyumlu olmalı
+- Hızlı karar vermek için hızlı bilgi erişimi kritik
 
-**Değerler ve Motivasyonlar:**
-- **Risk Yönetimi:** Yatırım yaparken riskleri minimize etmek istiyorlar
-- **Şeffaflık:** Satın alacakları binanın gerçek durumunu bilmek istiyorlar
-- **Rekabetçilik:** Diğer yatırımcılardan önce iyi fırsatları yakalamak
-- **Sürdürülebilirlik:** Uzun vadeli değer yaratmak, çevre dostu yatırımlar yapmak (özellikle genç grup)
-- **Veri Odaklılık:** Duygusal kararlar yerine veri tabanlı kararlar vermek
+**Kurumsal Değerler ve Motivasyonlar:**
+- **Risk Yönetimi:** Yatırım yaparken riskleri minimize etmek, portföy çeşitlendirmesi
+- **Şeffaflık:** Satın alacakları binanın gerçek durumunu bilmek, yatırımcılara rapor sunmak
+- **Rekabetçilik:** Diğer firmalardan önce iyi fırsatları yakalamak, piyasada avantaj sağlamak
+- **Sürdürülebilirlik:** Uzun vadeli değer yaratmak, ESG kriterlerine uyum, kurumsal itibar
+- **Veri Odaklılık:** Duygusal kararlar yerine veri tabanlı kararlar vermek, yatırımcılara güven vermek
+- **Ölçeklenebilirlik:** Çok sayıda binayı yönetirken verimli sistemler kullanmak
 
 **Tasarıma Dair Fikirleri:**
-- Profesyonel görünmeli - "bu ciddi bir platform"
-- Hızlı ve verimli olmalı - "zamanım değerli"
-- Karşılaştırma yapabilmeli - "bu bina diğerlerinden nasıl?"
-- Güvenilir olmalı - "bu verilere güvenebilir miyim?"
+- Profesyonel görünmeli - "bu ciddi bir platform, kurumsal kullanıma uygun"
+- Hızlı ve verimli olmalı - "zamanımız değerli, çok sayıda bina yönetiyoruz"
+- Karşılaştırma yapabilmeli - "portföyümüzdeki binaları karşılaştırabilmeliyiz"
+- Güvenilir olmalı - "bu verilere güvenebilir miyiz? Yatırımcılarımıza sunabilir miyiz?"
 - Blockchain entegrasyonu onlar için artı değer - "değiştirilemez kayıt" güven veriyor
+- API entegrasyonu önemli - "mevcut sistemlerimizle entegre olabilmeli"
 
 #### Problemleri ve İhtiyaçları
 
 **İşlevsel İhtiyaçlar:**
-- **Bilgi Asimetrisi:** Satın alırken binanın gerçek durumunu bilmek. "Bu bina depreme dayanıklı mı?", "Enerji maliyetleri ne kadar?", "Bakım giderleri yüksek mi?" gibi sorular.
-- **Karşılaştırma:** Farklı binaları karşılaştırabilmek. "Bu bina mahalledeki diğer binalardan daha mı iyi?"
-- **Risk Değerlendirmesi:** Yatırım riskini ölçebilmek. "Bu bina gelecekte değer kaybeder mi?", "İyileştirme maliyetleri ne kadar?"
-- **Hızlı Karar:** Zamanında karar verebilmek için hızlı bilgi erişimi.
+- **Bilgi Asimetrisi:** Satın alırken binanın gerçek durumunu bilmek. "Bu bina depreme dayanıklı mı?", "Enerji maliyetleri ne kadar?", "Bakım giderleri yüksek mi?" gibi sorular. Portföy yönetimi için kritik.
+- **Portföy Yönetimi:** Çok sayıda binayı yönetirken toplu analiz yapabilmek. "Portföyümüzdeki binaların ortalama BRI rating'i ne?", "Hangi binalar iyileştirme gerektiriyor?"
+- **Karşılaştırma:** Farklı binaları karşılaştırabilmek. "Bu bina mahalledeki diğer binalardan daha mı iyi?", "Portföyümüzdeki en iyi bina hangisi?"
+- **Risk Değerlendirmesi:** Yatırım riskini ölçebilmek. "Bu bina gelecekte değer kaybeder mi?", "İyileştirme maliyetleri ne kadar?", "Portföy riskimiz ne seviyede?"
+- **Raporlama:** Yatırımcılara ve üst yönetime rapor sunabilmek. "Portföyümüzün sürdürülebilirlik performansı nasıl?", "ESG kriterlerine uyumumuz ne seviyede?"
+- **Hızlı Karar:** Zamanında karar verebilmek için hızlı bilgi erişimi. Çok sayıda bina için ölçeklenebilir sistem.
 
-**Psikolojik İhtiyaçlar:**
-- **Güven:** Yatırım yaparken "doğru karar veriyorum" hissi. Özellikle büyük yatırımlarda kaygı yüksek.
-- **Kontrol:** Binanın durumunu kontrol edebilmek, "her şeyi biliyorum" hissi.
-- **Başarı:** İyi yatırım yapmak, "akıllı yatırımcıyım" hissi.
+**Kurumsal Psikolojik İhtiyaçlar:**
+- **Güven:** Yatırım yaparken "doğru karar veriyoruz" hissi. Özellikle büyük yatırımlarda ve yatırımcılara rapor sunarken kaygı yüksek.
+- **Kontrol:** Portföydeki binaların durumunu kontrol edebilmek, "her şeyi biliyoruz" hissi.
+- **Başarı:** İyi yatırımlar yapmak, "akıllı bir şirketiz" hissi. Ekip motivasyonu için önemli.
 
-**Sosyal İhtiyaçlar:**
-- **Prestij:** "Ben sürdürülebilir yatırımlar yapıyorum" diyebilmek. Özellikle ESG trendi artıyor.
-- **Rekabet:** Diğer yatırımcılardan önce iyi fırsatları yakalamak.
-- **Toplumsal Sorumluluk:** "Ben de çevreye katkı sağlıyorum" hissi.
+**Kurumsal Sosyal İhtiyaçlar:**
+- **Kurumsal İtibar:** "Biz sürdürülebilir yatırımlar yapıyoruz" diyebilmek. Özellikle ESG trendi artıyor ve yatırımcılar bunu önemsiyor.
+- **Rekabet:** Diğer firmalardan önce iyi fırsatları yakalamak, piyasada avantaj sağlamak.
+- **Kurumsal Sosyal Sorumluluk:** "Biz de çevreye katkı sağlıyoruz" hissi. CSR programları için veri sağlamak.
+- **Yatırımcı İlişkileri:** Yatırımcılara "sürdürülebilir portföy yönetiyoruz" mesajını vermek.
 
 #### Tasarımın Sunduğu Değerler
 
 **İşlevsel Değer:**
-- **Bilgi Şeffaflığı:** Blockchain üzerinde saklanan, değiştirilemez veriler sayesinde binanın gerçek durumunu görmek. "Bu veriler güvenilir mi?" sorusunu ortadan kaldırmak.
-- **Hızlı Değerlendirme:** Pasaport ID'si ile birkaç saniyede binanın tüm performans verilerine ulaşmak. Emlak görüşmelerinde "Hemen kontrol edeyim" diyebilmek.
-- **Karşılaştırma Aracı:** Farklı binaların BRI rating'lerini, enerji sınıflarını, karbon ayak izlerini karşılaştırabilmek. "Bu bina mahalledeki en iyi rating'e sahip" gibi objektif karşılaştırmalar.
-- **Risk Analizi:** BRI rating'i sayesinde yatırım riskini ölçebilmek. "AA rating'li bina = düşük risk" gibi net korelasyonlar.
+- **Bilgi Şeffaflığı:** Blockchain üzerinde saklanan, değiştirilemez veriler sayesinde binanın gerçek durumunu görmek. "Bu veriler güvenilir mi?" sorusunu ortadan kaldırmak. Yatırımcılara rapor sunarken kritik.
+- **Hızlı Değerlendirme:** Pasaport ID'si ile birkaç saniyede binanın tüm performans verilerine ulaşmak. Emlak görüşmelerinde "Hemen kontrol edeyim" diyebilmek. Çok sayıda bina için ölçeklenebilir.
+- **Portföy Analizi:** Portföydeki tüm binaların BRI rating'lerini, enerji sınıflarını, karbon ayak izlerini toplu olarak analiz edebilmek. "Portföyümüzün ortalama performansı ne?" gibi sorulara cevap vermek.
+- **Karşılaştırma Aracı:** Farklı binaları karşılaştırabilmek. "Bu bina mahalledeki en iyi rating'e sahip", "Portföyümüzdeki en iyi bina hangisi?" gibi objektif karşılaştırmalar.
+- **Risk Analizi:** BRI rating'i sayesinde yatırım riskini ölçebilmek. "AA rating'li bina = düşük risk" gibi net korelasyonlar. Portföy risk yönetimi için kritik.
+- **Raporlama:** Yatırımcılara ve üst yönetime sunum yapabilmek. "Portföyümüzün sürdürülebilirlik performansı", "ESG kriterlerine uyumumuz" gibi raporlar.
 
-**Psikolojik Değer:**
-- **Güven ve Huzur:** Blockchain kayıtları sayesinde "Bu veriler manipüle edilemez" hissi. Özellikle büyük yatırımlarda kritik.
-- **Kontrol Hissi:** Binanın tüm özelliklerini tek bir yerde görmek, "Her şeyi biliyorum, kontrol bende" hissi.
-- **Başarı ve Akıllılık:** Veri tabanlı karar vermek, "Ben akıllı yatırımcıyım, verilerle karar veriyorum" hissi.
+**Kurumsal Psikolojik Değer:**
+- **Güven ve Huzur:** Blockchain kayıtları sayesinde "Bu veriler manipüle edilemez" hissi. Özellikle büyük yatırımlarda ve yatırımcılara rapor sunarken kritik.
+- **Kontrol Hissi:** Portföydeki tüm binaların özelliklerini tek bir yerde görmek, "Her şeyi biliyoruz, kontrol bizde" hissi.
+- **Başarı ve Profesyonellik:** Veri tabanlı karar vermek, "Biz akıllı bir şirketiz, verilerle karar veriyoruz" hissi. Ekip motivasyonu için önemli.
 
-**Sosyal Değer:**
-- **Prestij ve Statü:** "Ben sürdürülebilir yatırımlar yapıyorum" diyebilmek. ESG kriterleri giderek önemli hale geliyor.
-- **Rekabetçi Avantaj:** Diğer yatırımcılardan önce bilgiye ulaşmak, "Ben daha hızlı karar verebiliyorum" avantajı.
-- **Toplumsal Sorumluluk:** "Ben de iklim değişikliğiyle mücadeleye katkı sağlıyorum" hissi. Özellikle genç yatırımcılar için önemli.
+**Kurumsal Sosyal Değer:**
+- **Kurumsal İtibar ve Prestij:** "Biz sürdürülebilir yatırımlar yapıyoruz" diyebilmek. ESG kriterleri giderek önemli hale geliyor ve yatırımcılar bunu önemsiyor.
+- **Rekabetçi Avantaj:** Diğer firmalardan önce bilgiye ulaşmak, "Biz daha hızlı karar verebiliyoruz" avantajı. Piyasada fark yaratmak.
+- **Kurumsal Sosyal Sorumluluk:** "Biz de iklim değişikliğiyle mücadeleye katkı sağlıyoruz" hissi. CSR programları için veri sağlamak.
+- **Yatırımcı İlişkileri:** Yatırımcılara "sürdürülebilir portföy yönetiyoruz" mesajını vermek. ESG yatırımcıları için önemli.
 
 ```mermaid
 flowchart TD
@@ -258,84 +269,100 @@ flowchart TD
 
 ---
 
-### 2.3 Profil 3: Belediye Çalışanları ve Şehir Planlamacıları
+### 2.3 Profil 3: Şehir Planlama Uzmanları, Belediyeler ve Çevre-Şehircilik Bakanlığı
 
 #### Kimler?
 
-Belediye çalışanları, şehir planlamacıları ve çevre müdürlüğü çalışanları. Bunlar YeşilPort'un sistemik etki yaratabileceği kullanıcılar. Toplu veri analizi yaparak şehir ölçeğinde kararlar alabilirler.
+Bu profil, sadece bireysel çalışanlar değil, aynı zamanda kurumsal yapıları da içeriyor. Şehir planlama uzmanları (mimar, şehir plancısı, çevre mühendisi gibi profesyoneller), belediyeler (kurumsal yapı olarak) ve Çevre, Şehircilik ve İklim Değişikliği Bakanlığı. Bunlar YeşilPort'un sistemik etki yaratabileceği kullanıcılar. Toplu veri analizi yaparak şehir, bölge ve ülke ölçeğinde kararlar alabilirler. Sadece bireysel ihtiyaçlar değil, kurumsal ihtiyaçlar ve politika geliştirme süreçleri de önemli.
 
 #### Nasıl Canlanıyorlar?
 
-**Yaş ve Profesyonel Özellikler:**
-- Geniş bir yaş aralığı: 25-55 yaş arası
+**Kurumsal Yapı ve Hiyerarşi:**
+- **Belediyeler (Kurumsal):** Farklı büyüklüklerde - küçük belediyeler (10-50 çalışan) ve büyük metropol belediyeleri (1000+ çalışan)
+- **Çevre-Şehircilik Bakanlığı:** Merkezi yönetim, politika geliştirme, ulusal ölçekte kararlar
+- **Şehir Planlama Uzmanları:** Hem belediyelerde hem bakanlıkta hem de özel sektörde çalışan profesyoneller
+- Geniş bir yaş aralığı: 25-60 yaş arası çalışanlar
 - Çoğunlukla mühendis, mimar, şehir plancısı veya çevre mühendisi geçmişine sahipler
 - Kamu sektöründe çalışıyorlar, bürokratik süreçlere aşinalar
 - Veri toplama ve analiz konularında deneyimliler ama modern araçlar kullanmakta zorlanabiliyorlar
-- "Şehir için en iyisini yapmak" motivasyonu güçlü
+- "Şehir/ülke için en iyisini yapmak" motivasyonu güçlü
 
-**Kültürel ve Sosyal Özellikler:**
+**Kurumsal Kültür ve Değerler:**
 - Toplumsal sorumluluk duyguları çok güçlü - "halka hizmet" anlayışı
 - Sürdürülebilirlik konularına ilgili ama bütçe kısıtları var
 - Farklı şehirlerden, farklı kültürel geçmişlere sahipler
-- "Bizim şehrimiz" diye düşünüyorlar, aidiyet duygusu güçlü
+- "Bizim şehrimiz/ülkemiz" diye düşünüyorlar, aidiyet duygusu güçlü
 - Politik baskılar altında çalışıyorlar, "doğru karar vermek" zorunda
+- Kurumsal hiyerarşi önemli - üst yönetime rapor sunmak gerekiyor
+- Ulusal politikalara uyum sağlamak zorundalar
 
-**Teknoloji ve Medya Alışkanlıkları:**
+**Teknoloji ve Sistem Alışkanlıkları:**
 - Excel, GIS (Coğrafi Bilgi Sistemleri) gibi araçlara aşinalar
 - Web tabanlı sistemler kullanıyorlar ama karmaşık sistemlerden kaçınıyorlar
 - Raporlama ve sunum yapıyorlar - görselleştirme önemli
 - Blockchain gibi yeni teknolojilere ilgili ama şüpheci yaklaşıyorlar ("gerçekten güvenilir mi?")
 - Mobil uygulamalar kullanıyorlar ama masaüstü tercih ediyorlar
+- Mevcut kamu sistemleriyle entegrasyon önemli
+- API entegrasyonları gerekebilir
 
-**Değerler ve Motivasyonlar:**
-- **Toplumsal Fayda:** "Şehrimiz için en iyisini yapmak" öncelikli
+**Kurumsal Değerler ve Motivasyonlar:**
+- **Toplumsal Fayda:** "Şehrimiz/ülkemiz için en iyisini yapmak" öncelikli
 - **Veri Odaklı Karar:** Duygusal değil, veri tabanlı kararlar vermek istiyorlar
 - **Şeffaflık:** Vatandaşlara karşı şeffaf olmak, "ne yaptığımızı göstermek"
 - **Sürdürülebilirlik:** Uzun vadeli planlama, gelecek nesilleri düşünmek
 - **Etkinlik:** Sınırlı kaynaklarla maksimum etki yaratmak
+- **Politika Geliştirme:** Ulusal ve yerel politika geliştirme süreçlerine veri sağlamak
+- **Uyum:** Ulusal standartlara ve mevzuata uyum sağlamak
 
 **Tasarıma Dair Fikirleri:**
-- Toplu veri analizi yapabilmeli - "şehrimizdeki binaların durumu ne?"
-- Raporlama ve sunum için uygun olmalı - "belediye meclisine sunabilir miyim?"
-- Güvenilir olmalı - "bu verilere güvenebilir miyiz?"
+- Toplu veri analizi yapabilmeli - "şehrimizdeki/ülkemizdeki binaların durumu ne?"
+- Raporlama ve sunum için uygun olmalı - "belediye meclisine/bakanlığa sunabilir miyiz?"
+- Güvenilir olmalı - "bu verilere güvenebilir miyiz? Vatandaşlara sunabilir miyiz?"
 - Erişilebilir olmalı - "vatandaşlar da görebilmeli"
 - Entegre olabilmeli - "mevcut sistemlerimizle uyumlu mu?"
+- Ölçeklenebilir olmalı - "şehir ölçeğinden ülke ölçeğine kadar çalışabilmeli"
 
 #### Problemleri ve İhtiyaçları
 
 **İşlevsel İhtiyaçlar:**
-- **Veri Toplama:** Şehirdeki binaların durumunu toplu olarak görmek. "Hangi bölgelerde risk var?", "Hangi binalar iyileştirme gerektiriyor?"
-- **Planlama:** İyileştirme programları planlamak. "Hangi bölgelere öncelik vermeliyiz?", "Bütçe nasıl dağıtılmalı?"
-- **Raporlama:** Üst yönetime ve vatandaşlara rapor sunmak. "Şehrimizdeki binaların %X'i A sınıfı enerji verimliliğine sahip" gibi.
-- **İzleme:** İyileştirme programlarının etkisini ölçmek. "Bu program başarılı mı?", "Hedeflerimize ulaştık mı?"
+- **Veri Toplama:** Şehir, bölge veya ülke ölçeğinde binaların durumunu toplu olarak görmek. "Hangi bölgelerde risk var?", "Hangi binalar iyileştirme gerektiriyor?", "Ülke genelinde durum nasıl?"
+- **Planlama:** İyileştirme programları planlamak. "Hangi bölgelere öncelik vermeliyiz?", "Bütçe nasıl dağıtılmalı?", "Ulusal politika nasıl olmalı?"
+- **Politika Geliştirme:** Ulusal ve yerel politika geliştirme süreçlerine veri sağlamak. "Hangi bölgelerde destek programları gerekli?", "Mevzuat değişiklikleri için veri var mı?"
+- **Raporlama:** Üst yönetime, meclise, bakanlığa ve vatandaşlara rapor sunmak. "Şehrimizdeki/ülkemizdeki binaların %X'i A sınıfı enerji verimliliğine sahip" gibi.
+- **İzleme:** İyileştirme programlarının etkisini ölçmek. "Bu program başarılı mı?", "Hedeflerimize ulaştık mı?", "Ulusal hedeflere ne kadar yakınız?"
+- **Haritalama:** Coğrafi olarak risk haritaları oluşturmak. "Hangi mahallelerde/illerde yüksek risk var?"
 
-**Psikolojik İhtiyaçlar:**
-- **Başarı Hissi:** "Ben şehrim için iyi işler yapıyorum" hissi. Özellikle zorlu bürokratik süreçlerde motivasyon önemli.
-- **Güven:** "Bu verilere güvenebilirim, doğru kararlar veriyorum" hissi.
-- **Anlaşılabilirlik:** Karmaşık verileri basit şekilde sunabilmek, "herkes anlayabilsin" isteği.
+**Kurumsal Psikolojik İhtiyaçlar:**
+- **Başarı Hissi:** "Biz şehrimiz/ülkemiz için iyi işler yapıyoruz" hissi. Özellikle zorlu bürokratik süreçlerde motivasyon önemli.
+- **Güven:** "Bu verilere güvenebiliriz, doğru kararlar veriyoruz" hissi. Vatandaşlara sunarken kritik.
+- **Anlaşılabilirlik:** Karmaşık verileri basit şekilde sunabilmek, "herkes anlayabilsin" isteği. Hem üst yönetim hem vatandaşlar için.
 
-**Sosyal İhtiyaçlar:**
-- **Toplumsal Tanınma:** "Biz sürdürülebilir bir şehir yaratıyoruz" diyebilmek.
-- **Şeffaflık:** Vatandaşlara karşı şeffaf olmak, "ne yaptığımızı gösteriyoruz" hissi.
-- **Rekabet:** Diğer şehirlerle karşılaştırma yapabilmek. "Bizim şehrimiz en sürdürülebilir" gibi.
+**Kurumsal Sosyal İhtiyaçlar:**
+- **Toplumsal Tanınma:** "Biz sürdürülebilir bir şehir/ülke yaratıyoruz" diyebilmek.
+- **Şeffaflık:** Vatandaşlara karşı şeffaf olmak, "ne yaptığımızı gösteriyoruz" hissi. Demokratik süreçler için önemli.
+- **Rekabet ve Prestij:** Diğer şehirlerle/ülkelerle karşılaştırma yapabilmek. "Bizim şehrimiz/ülkemiz en sürdürülebilir" gibi.
+- **Politik Başarı:** "Biz doğru politikaları uyguluyoruz" mesajını vermek. Seçmenlere ve üst yönetime.
 
 #### Tasarımın Sunduğu Değerler
 
 **İşlevsel Değer:**
-- **Toplu Veri Analizi:** Şehirdeki tüm binaların pasaport verilerini toplu olarak analiz edebilmek. "İlçemizdeki binaların ortalama BRI rating'i B, şu bölgelerde iyileştirme gerekiyor" gibi.
-- **Haritalama:** Coğrafi olarak risk haritaları oluşturabilmek. "Hangi mahallelerde yüksek risk var?" gibi görselleştirmeler.
-- **Planlama Desteği:** İyileştirme programları için veri tabanlı planlama. "Bu bölgeye öncelik vermeliyiz çünkü risk yüksek" gibi.
-- **İzleme ve Değerlendirme:** Programların etkisini ölçmek. "Bu program sonrası binaların rating'i artmış mı?" gibi.
+- **Toplu Veri Analizi:** Şehir, bölge veya ülke ölçeğinde tüm binaların pasaport verilerini toplu olarak analiz edebilmek. "İlçemizdeki/ilimizdeki/ülkemizdeki binaların ortalama BRI rating'i B, şu bölgelerde iyileştirme gerekiyor" gibi.
+- **Haritalama:** Coğrafi olarak risk haritaları oluşturabilmek. "Hangi mahallelerde/illerde yüksek risk var?" gibi görselleştirmeler. Hem yerel hem ulusal ölçekte.
+- **Planlama Desteği:** İyileştirme programları için veri tabanlı planlama. "Bu bölgeye öncelik vermeliyiz çünkü risk yüksek" gibi. Hem belediye hem bakanlık için.
+- **Politika Geliştirme:** Ulusal ve yerel politika geliştirme süreçlerine veri sağlamak. "Hangi bölgelerde destek programları gerekli?", "Mevzuat değişiklikleri için veri var mı?" gibi.
+- **İzleme ve Değerlendirme:** Programların etkisini ölçmek. "Bu program sonrası binaların rating'i artmış mı?", "Ulusal hedeflere ne kadar yakınız?" gibi.
+- **Raporlama:** Üst yönetime, meclise, bakanlığa ve vatandaşlara sunum yapabilmek. "Şehrimizdeki/ülkemizdeki binaların %X'i A sınıfı enerji verimliliğine sahip" gibi.
 
-**Psikolojik Değer:**
-- **Başarı ve Etki:** "Ben şehrim için somut işler yapıyorum" hissi. Veri tabanlı kararlar sayesinde "doğru yoldayım" hissi.
-- **Güven:** Blockchain kayıtları sayesinde "Bu veriler güvenilir, manipüle edilemez" hissi.
-- **Anlaşılabilirlik:** Karmaşık verileri görsel ve anlaşılır şekilde sunmak, "herkes anlayabilsin" isteğini karşılamak.
+**Kurumsal Psikolojik Değer:**
+- **Başarı ve Etki:** "Biz şehrimiz/ülkemiz için somut işler yapıyoruz" hissi. Veri tabanlı kararlar sayesinde "doğru yoldayız" hissi.
+- **Güven:** Blockchain kayıtları sayesinde "Bu veriler güvenilir, manipüle edilemez" hissi. Vatandaşlara sunarken kritik.
+- **Anlaşılabilirlik:** Karmaşık verileri görsel ve anlaşılır şekilde sunmak, "herkes anlayabilsin" isteğini karşılamak. Hem üst yönetim hem vatandaşlar için.
 
-**Sosyal Değer:**
-- **Toplumsal Tanınma:** "Biz sürdürülebilir bir şehir yaratıyoruz" diyebilmek. Özellikle ulusal/uluslararası platformlarda şehri tanıtmak.
-- **Şeffaflık:** Vatandaşlara karşı şeffaf olmak, "ne yaptığımızı gösteriyoruz" hissi. Blockchain sayesinde "veriler manipüle edilemez" güvencesi.
-- **Rekabet ve Prestij:** Diğer şehirlerle karşılaştırma yapabilmek. "Bizim şehrimiz en sürdürülebilir" gibi prestij.
+**Kurumsal Sosyal Değer:**
+- **Toplumsal Tanınma:** "Biz sürdürülebilir bir şehir/ülke yaratıyoruz" diyebilmek. Özellikle ulusal/uluslararası platformlarda şehri/ülkeyi tanıtmak.
+- **Şeffaflık:** Vatandaşlara karşı şeffaf olmak, "ne yaptığımızı gösteriyoruz" hissi. Blockchain sayesinde "veriler manipüle edilemez" güvencesi. Demokratik süreçler için önemli.
+- **Rekabet ve Prestij:** Diğer şehirlerle/ülkelerle karşılaştırma yapabilmek. "Bizim şehrimiz/ülkemiz en sürdürülebilir" gibi prestij.
+- **Politik Başarı:** "Biz doğru politikaları uyguluyoruz" mesajını vermek. Seçmenlere ve üst yönetime. Veri tabanlı politika geliştirme.
 
 ```mermaid
 graph TB
@@ -440,11 +467,11 @@ Bu analiz sonucunda, tasarım kararlarımızı şu şekilde şekillendirebiliriz
 
 Bu doküman kapsamında, YeşilPort'un dokunduğu üç kritik profili derinlemesine inceledik. Her profil için işlevsel, psikolojik ve sosyal değerleri analiz ettik. 
 
-Öğrendiğimiz en önemli şey, insanların sadece "işlevsel" ihtiyaçları olmadığı. Yöneticiler "zaman tasarrufu" istiyor ama aynı zamanda "başarı hissi" de istiyorlar. Yatırımcılar "bilgi şeffaflığı" istiyor ama aynı zamanda "prestij" de istiyorlar. Belediye çalışanları "toplu veri analizi" istiyor ama aynı zamanda "toplumsal tanınma" da istiyorlar.
+Öğrendiğimiz en önemli şey, insanların sadece "işlevsel" ihtiyaçları olmadığı. Yöneticiler "zaman tasarrufu" istiyor ama aynı zamanda "başarı hissi" de istiyorlar. Gayrimenkul firmaları "bilgi şeffaflığı" ve "portföy yönetimi" istiyor ama aynı zamanda "kurumsal itibar" da istiyorlar. Belediyeler ve bakanlık "toplu veri analizi" ve "politika geliştirme" istiyor ama aynı zamanda "toplumsal tanınma" da istiyorlar.
 
 YeşilPort olarak, sadece teknik bir çözüm sunmak yerine, bu insanların tüm ihtiyaçlarını karşılayan bir platform yaratmaya çalışıyoruz. Blockchain güvencesi, görsel skorlar, karşılaştırma özellikleri gibi her özellik, bu profillerin ihtiyaçlarından yola çıkarak tasarlandı.
 
-Gelecekte, bu analizi daha da derinleştirerek, her profil için özelleştirilmiş deneyimler sunabiliriz. Örneğin, yöneticiler için "hızlı rapor oluşturma", yatırımcılar için "risk analizi dashboard'u", belediyeler için "şehir ölçeğinde haritalama" gibi.
+Gelecekte, bu analizi daha da derinleştirerek, her profil için özelleştirilmiş deneyimler sunabiliriz. Örneğin, yöneticiler için "hızlı rapor oluşturma", gayrimenkul firmaları için "portföy yönetimi dashboard'u" ve "API entegrasyonları", belediyeler ve bakanlık için "şehir/ülke ölçeğinde haritalama" ve "politika geliştirme araçları" gibi.
 
 ---
 
